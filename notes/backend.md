@@ -57,4 +57,17 @@ high degree of plasticity.  Assume things will change and rather than
 trying to make the perfect data model from the outset, try to imagine
 and anticipate how it will evolve.
 
-# 
+# Misc notes
+
+## Representation of time
+
+For all representations of time the system should use the
+[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard
+exclusively.  Or rather, for each use there should be a clearly
+defined part of that standard used.  So for instance points in time,
+intervals etc are always written the same way.
+
+Note that internal representations of time in the software will be
+implementation specific.  For instance, many systems use number of
+seconds or milliseconds since epoch as their internal representation.
+
