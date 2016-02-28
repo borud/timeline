@@ -59,6 +59,16 @@ and anticipate how it will evolve.
 
 # Misc notes
 
+Whenever we need to express something like time, place,
+characterization of media files etc, we should look at what is in
+common use.  Choosing something that is in common use rather than
+constructing something specialized that is "perfect" means we can
+leverage the work of others -- which is important in order to make
+this practical.
+
+Not least because dealing with something like time turns out to be
+very complicated.
+
 ## Representation of time
 
 For all representations of time the system should use the
@@ -70,4 +80,13 @@ intervals etc are always written the same way.
 Note that internal representations of time in the software will be
 implementation specific.  For instance, many systems use number of
 seconds or milliseconds since epoch as their internal representation.
+
+
+## Media and media types
+
+Being able to describe media content precisely will be key for a
+system that has to deal with recordings of different kinds.  One of
+the more widespread standards is the
+[MIME](https://en.wikipedia.org/wiki/MIME) standards.
+
 
